@@ -8,7 +8,8 @@ module.exports = {
     username: 'postgres',
     password: 'admin',
     host: 'localhost',
-    database: 'database'
+    database: 'database',
+    port: 5432
   },
   deploy: {
     database: PGDATABASE,
