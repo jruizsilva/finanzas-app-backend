@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src --out-dir build",
     "dev": "nodemon src/app.js --exec babel-node",
-    "start": "node build/app.js"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
