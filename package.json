@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "serve": "babel-node server.js",
+    "serve": "babel-node src/app.js",
     "start": "nodemon --exec npm run serve"
   },
   "babel": {
