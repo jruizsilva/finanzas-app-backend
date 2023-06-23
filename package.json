@@ -4,9 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "babel src --out-dir build",
-    "dev": "nodemon --exec babel-node src/app.js",
-    "start": "node build/app.js"
+    "start": "babel-node ./src/app.js",
+    "build": "babel ./src --out-dir ./dist --source-maps",
+    "build:clean": "rm -rf dist",
+    "prebuild": "npm run build:clean",
+    "start:prod": "npm run build && node ./dist/app.js"
   },
   "keywords": [],
   "author": "",
