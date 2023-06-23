@@ -4,9 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "babel src --out-dir build",
-    "dev": "nodemon src/app.js --exec babel-node",
-    "start": "npm run build && node build/app.js"
+    "build": "babel src/app.js --out-dir build",
+    "start": "npm run build && nodemon build/app.js"
   },
   "keywords": [],
   "author": "",
