@@ -8,6 +8,7 @@ const sequelize =
         username: deploy.username,
         password: deploy.password,
         host: deploy.host,
+        port: deploy.port,
         dialect: 'postgres',
         logging: false,
         pool: {
@@ -38,21 +39,21 @@ const sequelize =
 //   username: deploy.username,
 //   password: deploy.password,
 //   host: deploy.host,
-//   dialect: "postgres",
+//   dialect: 'postgres',
 //   logging: false,
 //   pool: {
 //     max: 3,
 //     min: 1,
-//     idle: 10000,
+//     idle: 10000
 //   },
 //   dialectOptions: {
 //     ssl: {
 //       require: true,
-//       rejectUnauthorized: false,
+//       rejectUnauthorized: false
 //     },
-//     keepAlive: true,
+//     keepAlive: true
 //   },
-//   ssl: true,
-// });
+//   ssl: true
+// })
 
 export default sequelize
