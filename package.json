@@ -4,11 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "babel-node ./src/app.js",
-    "build": "babel ./src --out-dir ./dist --source-maps",
-    "build:clean": "rm -rf dist",
-    "prebuild": "npm run build:clean",
-    "start:prod": "npm run build && node ./dist/app.js"
+    "serve": "babel-node server.js",
+    "start": "nodemon --exec npm run serve"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -31,6 +33,8 @@
     "@babel/core": "^7.18.6",
     "@babel/node": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "nodemon": "^2.0.22"
   }
 }
