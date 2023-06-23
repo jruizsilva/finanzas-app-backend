@@ -30,6 +30,7 @@ const sequelize =
         username: local.username,
         password: local.password,
         host: local.host,
+        port: local.port,
         dialect: 'postgres',
         logging: false
       })
