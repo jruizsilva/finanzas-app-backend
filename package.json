@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "babel src/app.js --out-dir build",
+    "build": "babel src --out-dir build",
     "start": "npm run build && nodemon build/app.js"
   },
   "keywords": [],
