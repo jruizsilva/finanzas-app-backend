@@ -1,3 +1,5 @@
+import dotenv from 'dotenv'
+dotenv.config()
 import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
@@ -31,7 +33,11 @@ sequelize
   .then(() => {
     console.log('DB connected')
     app.listen(app.get('port'), () => {
-      console.log('Server listening on port', app.get('port'))
+      console.log(
+        'Server listening on port',
+        app.get('port'),
+        process.env.NODE_ENV
+      )
     })
   })
   .catch((err) => {
